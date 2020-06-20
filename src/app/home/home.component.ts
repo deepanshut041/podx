@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { HOME_MENU_ITEMS } from '../shared/constants/home-menu';
+import { NbSidebarService } from '@nebular/theme';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  menu = HOME_MENU_ITEMS
+
+  constructor(private sidebarService: NbSidebarService) { }
 
   ngOnInit(): void {
+
+  }
+
+  toggle() {
+    this.sidebarService.toggle();
   }
 
 }

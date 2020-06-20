@@ -6,7 +6,7 @@ import { AuthModule } from "./auth/auth.module";
 import { AppComponent } from './app.component';
 import { HomeModule } from './home/home.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NbThemeModule, NbLayoutModule, NbMenuModule, NbDialogModule } from '@nebular/theme';
+import { NbThemeModule, NbLayoutModule, NbMenuModule, NbDialogModule, NbSidebarModule } from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { SharedModule } from './shared/shared.module';
 
@@ -18,9 +18,10 @@ import { SharedModule } from './shared/shared.module';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    NbThemeModule.forRoot({ name: 'dark' }),
+    NbThemeModule.forRoot({ name: 'corporate' }),
     NbMenuModule.forRoot(),
     NbDialogModule.forRoot(),
+    NbSidebarModule.forRoot(),
     NbLayoutModule,
     NbEvaIconsModule,
     SharedModule,

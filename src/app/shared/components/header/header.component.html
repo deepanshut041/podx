@@ -1,0 +1,29 @@
+<div class="fluid-container w-100">
+    <div class="row">
+        <div class="col-auto mt-2 logo-container">
+            <a (click)="toggleSidebar()" class="sidebar-toggle">
+                <nb-icon icon="menu-2-outline"></nb-icon>
+            </a>
+            <a class="ml-3" (click)="navigateHome()"><strong>PodX</strong></a>
+        </div>
+        <div class="col">
+            <nb-form-field>
+                <input type="text" nbInput fullWidth  class="mr-2">
+                <nb-icon nbPrefix icon="search-outline" pack="eva"></nb-icon>
+            </nb-form-field>
+        </div>
+        <div class="col-auto mt-2">
+            <nb-actions size="small">
+                <nb-action class="user-action" icon="bell-outline"></nb-action>
+                <nb-action class="user-action" [nbContextMenu]="themeMenu" icon="color-palette-outline"
+                    nbContextMenuTag="theme-menu"></nb-action>
+                <nb-action class="user-action">
+                    <nb-user [nbContextMenu]="userMenu" [onlyPicture]="userPictureOnly" [name]="user?.name"
+                        [picture]="'https://cdn3.iconfinder.com/data/icons/business-round-flat-vol-1-1/36/user_account_profile_avatar_person_student_male-512.png'"
+                        size="small">
+                    </nb-user>
+                </nb-action>
+            </nb-actions>
+        </div>
+    </div>
+</div>

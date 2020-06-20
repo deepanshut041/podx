@@ -1,16 +1,4 @@
-<nb-layout>
-
-    <nb-layout-header fixed>
-        <!-- Insert header here -->
-    </nb-layout-header>
-
-    <nb-layout-column>
-
-        <h1>Hello</h1>
-    </nb-layout-column>
-
-    <nb-layout-footer fixed>
-        <!-- Insert footer here -->
-    </nb-layout-footer>
-
-</nb-layout>
+<shared-one-column-layout>
+    <nb-menu [items]="menu"></nb-menu>
+    <router-outlet></router-outlet>
+</shared-one-column-layout>
