@@ -1,15 +1,15 @@
 <div class="fluid-container w-100">
     <div class="row">
-        <div class="col-auto mt-2 logo-container">
+        <div class="col-auto logo-container">
             <a (click)="toggleSidebar()" class="sidebar-toggle">
                 <nb-icon icon="menu-2-outline"></nb-icon>
             </a>
-            <a class="ml-3" (click)="navigateHome()"><strong>PodX</strong></a>
+            <a class="ml-4 h5" (click)="navigateHome()">PodX</a>
         </div>
         <div class="col">
             <nb-form-field>
                 <input type="text" nbInput fullWidth  class="mr-2">
-                <nb-icon nbPrefix icon="search-outline" pack="eva"></nb-icon>
+                <nb-icon nbSuffix icon="search-outline" pack="eva"></nb-icon>
             </nb-form-field>
         </div>
         <div class="col-auto mt-2">
