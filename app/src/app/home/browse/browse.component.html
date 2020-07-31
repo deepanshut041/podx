@@ -1,0 +1,26 @@
+<div class="main-column-container">
+    <h1>Browse</h1>
+    <nb-tabset>
+        <nb-tab tabTitle="Top Podcast">
+            <div class="grid">
+                <div class="grid-item" *ngFor="let podcast of topPodcasts">
+                    <shared-feed-item [podcast]="podcast" ></shared-feed-item>
+                </div>
+            </div>
+        </nb-tab>
+        <nb-tab tabTitle="Categories">
+            <div class="grid">
+                <div class="grid-item" *ngFor="let category of categories">
+                    <div class="category-card" style="background-image: url({{category.background}});" [routerLink]="['/home', 'feed', category['id']]">
+                        <div class="text-center category-overlay">
+                            <h3>{{category.title}}</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nb-tab>
+        <nb-tab tabTitle="New Release">
+            New Release
+        </nb-tab>
+    </nb-tabset>
+</div>

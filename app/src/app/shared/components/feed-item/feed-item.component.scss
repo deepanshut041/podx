@@ -1,0 +1,45 @@
+.feed-item {
+    .item-header {
+        width: 100%;
+        height: auto;
+        background-image: url(/assets/placeholders/album_cover.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .item-player {
+            background-color: #000000aa;
+            width: 100%;
+            height: 0;
+            opacity: 0;
+            padding-bottom: 55%;
+            padding-top: 40%;
+            
+            button {
+                background-color: transparent;
+                border: 0px;
+                margin: 0 10px;
+
+                nb-icon {
+                    font-size: 2rem;
+                    color: #fff;
+                    margin: auto;
+                }
+            }
+        }
+
+        .item-player:hover {
+            opacity: 1;
+        }
+    }
+
+    .item-footer {
+        .item-name {
+            margin-bottom: 0px;
+            font-size: .9rem;  
+        }
+        .item-artist {
+            font-size: .7rem;        
+        }
+    }
+}

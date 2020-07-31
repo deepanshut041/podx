@@ -1,0 +1,22 @@
+.feed-header{
+    background-position: center;
+    background-image: url(/assets/feed_banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+
+    .feed-overlay {
+        background-color: #000000aa;
+        width: 100%;
+        height: 100%;
+
+        h1 {
+            font-size: 5rem;
+            color: #fff;
+            padding-top: 1.5em;
+            margin-top: 0;
+            text-transform: uppercase;
+        }
+    }
+}

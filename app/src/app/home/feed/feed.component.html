@@ -1,0 +1,14 @@
+<div>
+    <div class="feed-header">
+        <div class="feed-overlay text-center">
+            <h1>{{category_name}}</h1>
+        </div>
+    </div>
+    <div class="main-column-container">
+        <div class="grid">
+            <div class="grid-item" *ngFor="let podcast of podcasts">
+                <shared-feed-item [podcast]="podcast" ></shared-feed-item>
+            </div>
+        </div>
+    </div>
+</div>

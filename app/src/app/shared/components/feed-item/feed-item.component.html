@@ -1,0 +1,13 @@
+<div class="feed-item">
+    <div class="item-header" style="background-image: url({{(podcast['im:image'][1]['label'] | itunesImage) || 'assets/placeholders/album_cover.png'}});">
+        <div class="item-player text-center">
+            <button><nb-icon icon="heart-outline"></nb-icon></button>
+            <button [routerLink]="['/home', 'podcast', podcast['id']['attributes']['im:id']]"><nb-icon icon="play-circle-outline" class="display1"></nb-icon></button>
+            <button (click)="getInfo()"><nb-icon icon="info-outline"></nb-icon></button> 
+        </div>
+    </div>
+    <div class="item-footer">
+        <p class="item-name">{{ podcast['im:name']['label'] }}</p>
+        <p class="item-artist">{{ podcast['im:artist']['label'] }}</p>
+    </div>
+</div>

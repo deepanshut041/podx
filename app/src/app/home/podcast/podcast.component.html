@@ -1,0 +1,40 @@
+<div *ngIf="!loading" class="main-column-container">
+    <div class="row pod-header">
+        <div class="col-auto mx-auto">
+            <img class="img-fluid " src="{{image || '/assets/placeholders/album_cover.png'}}" />
+        </div>
+        <div class="col align-self-center">
+            <h1>{{title}}</h1>
+            <p>{{author}}</p>
+            <div>
+                <button nbButton outline shape="round"> Play </button>
+                <button nbButton outline shape="round"> Follow </button>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h3>About</h3>
+        <p>Description</p>
+    </div>
+    <div>
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Title</th>
+                <th scope="col">Progress</th>
+                <th scope="col">Release Date</th>
+                <th scope="col">Length</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+</div>

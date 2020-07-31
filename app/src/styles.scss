@@ -6,3 +6,77 @@
   @include nb-theme-global();
 };
 /* You can add global styles to this file, and also import other style files */
+
+.grid {
+  display: flex;
+  flex: 1;
+  overflow-x: hidden;
+  overflow-y: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.grid-item {
+  flex-basis: 25%;
+  max-width: 25%;
+  height: auto;
+  overflow: visible;
+  box-sizing: border-box;
+  padding: 1rem;
+}
+
+.main-column-container{
+  padding: 2.25rem 2.25rem 0.75rem;
+}
+
+/* Media queries for responsive grid */
+
+@media (min-width: 3401px) {
+  .grid-item {
+      flex-basis: 12.5%;
+      max-width: 12.5%;
+  }
+}
+
+@media (min-width: 2801px) and (max-width: 3400px) {
+  .grid-item {
+      flex-basis: 14.28571%;
+      max-width: 14.28571%;
+  }
+}
+
+@media (min-width: 2201px) and (max-width: 2800px) {
+  .grid-item {
+      flex-basis: 16.66667%;
+      max-width: 16.66667%;
+  }
+}
+
+@media (min-width: 1601px) and (max-width: 2200px) {
+  .grid-item {
+      flex-basis: 20%;
+      max-width: 20%;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1600px) {
+  .grid-item {
+      flex-basis: 25%;
+      max-width: 25%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .grid-item {
+      flex-basis: 33.33333%;
+      max-width: 33.33333%;
+  }
+}
+
+@media (max-width: 767px) {
+  .grid-item {
+      flex-basis: 50%;
+      max-width: 50%;
+  }
+}
